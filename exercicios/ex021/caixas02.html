@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(42, 42, 124, 0.842);
+        }
+        header {
+            background-color: rgba(26, 114, 114, 0.705);
+            padding: 10px;
+            margin: 10px;
+        }
+       
+        
+        nav {
+            background-color: rgba(20, 87, 87, 0.808);
+            padding: 1px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.384);
+        }
+        nav > a {
+            margin-right: 30px;
+            background-color: rgba(20, 87, 87, 0.808);
+
+        }
+        nav > a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        main {
+            background-color: rgba(26, 114, 114, 0.705);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 0px 10px 10px 0px
+        }
+        article {
+            background-color: rgba(20, 87, 87, 0.808);
+            padding: 2px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.384);
+        }
+        article > aside {
+            background-color: rgba(10, 44, 44, 0.705);
+            
+        }
+       
+        p {
+            text-align: justify;
+        }
+        footer {
+            background-color: rgb(43, 15, 15);
+            padding: 10px;
+            margin: 10px;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.8em;
+            text-align: center;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Saiba mais</h2>
+            <article>
+            <h2>Notícia</h2>
+            <p>a associação <abbr title="Broxas Anônimos">BA</abbr> informa que o reinaldo é careca desde os 5 anos</p>
+            <aside>
+                escrita por Pintogrosso
+            </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        Desenvolvido por Manhas
+    </footer>
+</body>
+</html>
