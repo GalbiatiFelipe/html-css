@@ -3,36 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title>formulario</title>
 </head>
 <body>
-    <h1>Formulario</h1>
+    <h1>Teste formulario</h1>
 
-    <form action="cadastro.php" method="post" autocomplete="off">
+    <form action="cadastro.php" method="get" autocomplete="off">
 
         <p>
             <label for="inome">Nome:</label>
-            <input type="text" name="Nome" id="inome" minlength="4" maxlength="10">
+            <input type="text" name="nome" id="inome" required>
         </p>
 
         <p>
-            <label for="iemail">Email</label>
-           <input type="email" name="email" id="iemail" required>
+            <label for="iemail">Email:</label>
+            <input type="email" name="email" id="iemail">
         </p>
+
         <p>
-            <label for="ies">Estado:</label>
-            <select name="es" id="ies">
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required mixlength="6">
+        </p>
+
+        <p>
+            <label for="iest">Estado:</label>
+            <select name="est" id="iest">
 
                 <optgroup label="Sudeste">
                     <option value="SP">São Paulo</option>
                     <option value="RJ">Rio de Janeiro</option>
                     <option value="MG">Minas Gerais</option>
+                    <option value="ES">Espirito Santo</option>
                 </optgroup>
+
             </select>
         </p>
+        
         <p>
-            <label for="icor">Escolha sua cor:</label>
-            <input type="color" name="cor" id="icor" value="#ff8073">
+            <label for="bio">Sobre mim:</label> <br>
+            <textarea name="bio" id="ibio" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor" value="#b253df">
         </p>
 
         <p>
