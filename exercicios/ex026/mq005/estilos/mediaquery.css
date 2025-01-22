@@ -13,6 +13,10 @@
         display: inline-block;
     }
 
+    menu a {
+        border-top: 0px;
+    }
+
     main {
         width: 992px;
     }
