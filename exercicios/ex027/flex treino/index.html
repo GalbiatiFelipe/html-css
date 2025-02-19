@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino flexbox</title>
+
+    <style>
+        main {
+            background-color: lightcoral;
+            height: 200px;
+
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            
+        }
+
+        section {
+            background-color: lightblue;
+            border: 1px solid black;
+            padding: 5px;
+
+           
+        }
+
+        section#jg1 {
+            align-self: flex-start;
+        }
+        section#jg2 {
+            align-self: stretch;
+        }
+        section#jg3 {
+            align-self: center;
+        }
+        section#jg4 {
+            align-self: flex-end;
+        }
+        section#jg5 {
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Melhores Jogos</h1>
+    </header>
+
+    <main>
+        <section id="jg1">Red Dead Redemption 2</section>
+        <section id="jg2">The Witcher 3</section>
+        <section id="jg3">Resident Evil 4 Remake</section>
+        <section id="jg4">Bioshock</section>
+        <section id="jg5">Elden Ring</section>
+    </main>
+</body>
+</html>
