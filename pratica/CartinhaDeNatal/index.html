@@ -30,6 +30,7 @@
             border: none;
             background-color: #63783d;
             color: white;
+            cursor: pointer;
         }
 
         button:hover {
@@ -37,23 +38,62 @@
             color: #63783D;
         }
 
-        p {
+        div {
             padding-top: 5px;
+            margin: auto;
+            margin-top: 8px;
+            background-color: white;
+            border-radius: 5px;
+            border: 2px solid #8C2A32;
+            width: 150px;
+
+            display: none;
+        }
+
+        div:hover {
+            cursor: pointer;
+        }
+
+        div:active {
+            background-color: #8c2a329d;
+            border: none;
         }
 
         a {
+
             color: #8C2A32;
             text-decoration: none;
+        }
+
+        a:active {
+            color: white;
         }
     </style>
 </head>
 <body>
     <main>
         <h3>Digite a senha para abrir seu presente</h3>
-        <input type="number" name="senha" id="senha">
-        <button>Enviar</button>
+        <input type="text" name="senha" id="senha">
+        <button onclick="enviarSenha()">Enviar</button>
         <br>
-        <p><a href="carta.html">Abrir presente</a></p>
+        <div id="res"><a href="carta.html">Abrir presente</a></div>
+        <div id="erro" style=> </div>
     </main>
+
+    <script>
+        function enviarSenha() {
+    var caixa = document.getElementById('senha')
+    var res = document.getElementById('res')
+    var erro = document.getElementById('erro')
+
+    if (caixa.value == "02032023") {
+        res.style.display = "block"
+        erro.textContent = ""
+    } else {
+        res.style.display = "none"
+        erro.textContent = "Tente novamente"
+    }
+}
+    </script>
 </body>
 </html>
