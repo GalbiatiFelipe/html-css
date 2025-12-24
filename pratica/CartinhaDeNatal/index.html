@@ -13,6 +13,8 @@
             padding: 10px;
             border-radius: 10px;
             max-width: 800px;
+
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         h3 {
@@ -77,23 +79,23 @@
         <button onclick="enviarSenha()">Enviar</button>
         <br>
         <div id="res"><a href="carta.html">Abrir presente</a></div>
-        <div id="erro" style=> </div>
+        <p id="erro" style=> </p>
     </main>
 
     <script>
         function enviarSenha() {
-    var caixa = document.getElementById('senha')
-    var res = document.getElementById('res')
-    var erro = document.getElementById('erro')
+            var caixa = document.getElementById('senha')
+            var res = document.getElementById('res')
+            var erro = document.getElementById('erro')
 
-    if (caixa.value == "02032023") {
-        res.style.display = "block"
-        erro.textContent = ""
-    } else {
-        res.style.display = "none"
-        erro.textContent = "Tente novamente"
-    }
-}
+            if (caixa.value == "02032023") {
+            res.style.display = "block"
+            erro.textContent = ""
+            } else {
+            res.style.display = "none"
+            erro.textContent = "Tente novamente"
+            }
+        }
     </script>
 </body>
 </html>

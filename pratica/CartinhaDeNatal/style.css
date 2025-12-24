@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #F2EBDC;
+    background-color: #f2ebdc;
     margin: auto;
     margin-top: 10px;
     padding: 10px;
@@ -19,12 +19,16 @@ body {
 header h1 {
     text-align: center;
     color: #8C2A32;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
 }
 
 main {
-    padding-top: 10px;
+    background-color: #f0e0c0;
+    border-radius: 8px;
+    padding: 10px;
     font-size: large;
-    text-decoration: underline;
+    text-decoration: none;
     text-indent: 20px;
     line-height: 1.8em;
 }
@@ -32,6 +36,7 @@ main {
 p {
     color: #260F01;
     padding-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #final {
